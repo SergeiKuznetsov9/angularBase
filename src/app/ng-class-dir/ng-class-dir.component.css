@@ -1,0 +1,27 @@
+.greenyellowColor {
+    color: greenyellow;
+}
+
+.orangeColor {
+    color: orange;
+}
+
+.violetColor {
+    color: violet;
+}
+
+.greyBackground {
+    background-color: grey;
+}
+
+.blackBackground {
+    background-color: black;
+}
+
+.bigFontSize {
+    font-size: 36px;
+}
+
+.boldFont {
+    font-weight: bold;
+}

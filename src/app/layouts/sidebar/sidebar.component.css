@@ -1,0 +1,5 @@
+.sidebar {
+    background-color: aqua;
+    width: 300px;
+    height: calc(100vh - 160px);
+}

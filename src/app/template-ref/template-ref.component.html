@@ -1,0 +1,8 @@
+<p>template-ref works!</p>
+
+<div #refForBlock>
+    Блок с навешанным рефом
+</div>
+
+<button (click)="showAllInf(refForBlock)">ShowBlock</button>
+<button (click)="showAllInf(refForBlock.innerHTML)">ShowPart</button>

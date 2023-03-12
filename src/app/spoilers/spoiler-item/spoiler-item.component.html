@@ -1,0 +1,6 @@
+<h1>{{header}}</h1>
+<span (click)="showHide()" *ngIf="!isVisible">Show hide</span>
+<span (click)="showHide()" *ngIf="isVisible">Hide</span>
+<div *ngIf="isVisible">
+    <ng-content></ng-content>
+</div>

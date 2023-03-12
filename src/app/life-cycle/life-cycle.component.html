@@ -1,0 +1,8 @@
+<p>life-cycle works!</p>
+<button type="button" (click)="increase()">INCREASE</button>
+<button type="button" (click)="decrease()">DECREASE</button>
+<br/>
+<button type="button" (click)="increaseSecondCounter()">INCREASE_SECOND_COUNTER</button>
+<button type="button" (click)="decreaseSecondCounter()">DECREASE_SECOND_COUNTER</button>
+
+<app-component-with-hooks [counter]="counter" [secondCounter]="counter2"></app-component-with-hooks>

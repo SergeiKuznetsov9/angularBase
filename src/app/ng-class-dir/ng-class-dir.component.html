@@ -1,0 +1,25 @@
+<p>Использование строкового значения c ngClass</p>
+<div [ngClass]="'violetColor blackBackground'">
+    Блок с примером
+</div>
+<br/>
+<p>Использование массива c ngClass</p>
+<div [ngClass]="['violetColor', 'blackBackground']">
+    Блок с примером
+</div>
+<br/>
+<!-- После послднего свойства НЕ ДОЛЖНО БЫТЬ ЗАПЯТОЙ -->
+<p>Использование объекта с условиями c ngClass</p>
+<div [ngClass]="{
+    'violetColor': false,
+    'blackBackground': false,
+    'greenyellowColor greyBackground': true,
+    'boldFont': true
+}">
+    Блок с примером
+</div>
+<!-- После послднего свойства НЕ ДОЛЖНО БЫТЬ ЗАПЯТОЙ -->
+<p>Использование объекта из класса c ngClass</p>
+<div [ngClass]="settings">
+    Блок с примером
+</div>

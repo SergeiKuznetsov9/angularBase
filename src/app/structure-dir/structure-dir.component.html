@@ -1,0 +1,39 @@
+<p>Ниже нейкий блок, который будет отображать в зависимости от условия разный контент</p>
+
+<div *ngIf="isShown; then thenBlock else elseBlock"></div>
+
+<ng-template #thenBlock>
+    <h5>ThenBlock</h5>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h5>ElseBlock</h5>
+</ng-template>
+
+
+<div [ngSwitch]='value'>
+        <div *ngSwitchCase="1">Выбрано значение 1</div>
+        <div *ngSwitchCase="2">Выбрано значение 2</div>
+        <div *ngSwitchCase="3">Выбрано значение 3</div>
+        <div *ngSwitchCase="4">Выбрано значение 4</div>
+        <div *ngSwitchCase="5">Выбрано значение 5</div>
+        <div *ngSwitchDefault>Совпадений нет</div>
+</div>
+<br/>
+<br/>
+<br/>
+<div>
+    <p *ngFor="let item of dataFor;
+        let i = index;
+        let e = even;
+        let o = odd;
+        let f = first;
+        let l = last"
+        
+        [style.color]="e ? 'green' : 'red' "
+        
+        
+    >
+        {{i+1}} {{item.name}} {{item.secondName}}
+    </p>
+</div>

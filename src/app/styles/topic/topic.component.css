@@ -1,0 +1,22 @@
+/* Применится в том случае, если h2 имеет предка с классом .dark */
+:host-context(.dark) h2 {
+    color: white
+}
+
+:host-context(.dark) p {
+    color: white
+}
+
+/* Применится в том случае, если h2 имеет предка с классом .light */
+:host-context(.light) h2 {
+    color: black
+}
+
+:host-context(.light) p {
+    color: black
+}
+
+/* Применится к селектору компонента */
+:host {
+    display: block;
+}

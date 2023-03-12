@@ -1,0 +1,15 @@
+<p>двусторонняя привязка сделана вручную</p>
+<input type="text" (input)="onInput($event)" [value]="firstInputValue" />
+<button (click)="showFirstInputValue()">ShowVal</button>
+<button type="button" (click)="changeFirstInputValue()">
+  ChangeValueOfFirstInputValue
+</button>
+<br />
+<hr />
+<p>двусторонняя привязка при помощи диррективы</p>
+<p>
+  Чтобы она работала необходимо в свойство imports app.module.ts добавить
+  FormsModule
+</p>
+
+<input type="text" [(ngModel)]="firstInputValue" />

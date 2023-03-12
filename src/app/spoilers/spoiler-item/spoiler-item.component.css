@@ -1,0 +1,12 @@
+:host {
+    display: block;
+    margin-bottom: 2em;
+}
+
+h1 {
+    margin: 0;
+}
+
+span {
+    cursor: pointer;
+}

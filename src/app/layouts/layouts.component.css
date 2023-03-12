@@ -1,0 +1,15 @@
+.appHeader {
+    margin-bottom: 22px;
+    padding: 20px;
+    background-color: chocolate;
+}
+
+.appMain {
+    box-sizing: border-box;
+    display: block;
+    margin-top: 100px;
+    background-color: blueviolet;
+    padding: 20px;
+    width: 100%;
+
+}
